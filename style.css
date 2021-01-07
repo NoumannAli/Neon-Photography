@@ -1,0 +1,176 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+
+
+}
+
+.container{
+	width: 100%;
+	min-height: 105vh;
+	background: radial-gradient(#768aff, #0f228a);
+	color:#fff;
+	position: relative;
+
+}
+
+.logo{
+	margin-left: 7%;
+	height: 90px;
+}
+
+.content{
+	max-width: 600px;
+	margin-left: 15%;
+	margin-top: 10%;
+	position: relative;
+}
+
+.content h1{
+	font-size: 70px;
+	margin:10px 0;
+	font-weight: 100;
+}
+.content h2{
+	font-size: 80px;
+	margin:10px 0;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+.content p{
+	font-size: 12px;
+	margin:18px 0;
+	color: #ccc;
+	line-height: 18px;
+}
+
+.link{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	margin:20px 0;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.link::after{
+
+	content: '';
+	background:#fff;
+	height: 2px;
+	width:100px;
+	position: absolute;
+	top:10px;
+	left: 110%;
+	transform: translateY(-50%);
+	transition: 0.5s;
+
+}
+
+.link:hover::after{
+	width: 200px;
+}
+
+span{
+	position: absolute;
+	left: -100px;
+	top:190px;
+	transform: rotate(-90deg);
+	letter-spacing: 2px;
+	opacity: 0.6;
+}
+
+
+span::after{
+
+	content: '';
+	background:#fff;
+	height: 3px;
+	width:100px;
+	position: absolute;
+	top:10px;
+	left: 110%;
+	transform: translateY(-50%);
+	
+
+}
+
+.feature-img{
+	position: absolute;
+	right:0;
+	bottom: 0;
+	top:0;
+	max-width: 680px;
+}
+
+.search-img{
+	position: absolute;
+	left: 12%;
+	bottom: 8%;
+	max-width: 21px;
+	opacity: 0.5;
+}
+
+@media only screen and (max-width: 1260px){
+	.content h2{
+		font-size: 50px;
+	}
+	
+	.content p{
+		width: 40%;
+	}
+	.container .feature-img{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 770px){
+
+	.feature-img{
+	position: absolute;
+	
+	max-width: 280px;
+	height: 100vh;
+}
+
+.container .feature-img{
+		width: 50%;
+	}
+.content h1{
+	font-size: 80px;
+	margin:10px 0;
+	font-weight: 100;
+}
+
+.content h2{
+	font-size: 30px;
+	margin:10px 0;
+	font-weight: 100;
+}
+
+.container{ height: 80vh;
+
+	}
+
+	.content p{
+	font-size: 8px;
+	width: 50%;
+
+}
+
+.link {
+	font-size: 10px;
+
+
+}
+.content p{
+		width: 30%;
+	}
+
+}
+
+
+
+
